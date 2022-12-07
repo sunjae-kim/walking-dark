@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import assets from '../assets'
+import assets from '../../assets'
 import configs from './config'
 
 export default defineStore('game.store', () => {

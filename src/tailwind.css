@@ -58,7 +58,7 @@
 
   @font-face {
     font-family: "Horror";
-    src: url("horror-font.ttf");
+    src: url("/horror-font.ttf");
   }
   body {
     font-family: Horror;

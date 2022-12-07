@@ -1,5 +1,5 @@
 import { defineComponent, onMounted, ref } from 'vue'
-import assets from '../../assets'
+import assets from '../../../assets'
 
 export default defineComponent({
   name: 'Example.Image',
