@@ -30,7 +30,7 @@ export default defineComponent({
     return () => [
       <div ref={startRef} class="fixed inset-0 flex justify-center items-center" v-show={!started.value}>
         <button
-        class="text-[#880808] text-5xl"
+          class="text-[#880808] text-5xl"
           onClick={() => {
             audio.play()
             startRef.value!.animate([{ opacity: 1 }, { opacity: 0 }], 1000)
@@ -42,7 +42,11 @@ export default defineComponent({
           시작하기
         </button>
       </div>,
-      <div v-show={viewModel.initialized && started.value} class="grow min-h-[2000vh] overflow-x-hidden text-[#880808]">
+      <div
+        v-show={viewModel.initialized && started.value}
+        class="grow overflow-x-hidden text-[#880808]"
+        style={{ minHeight: 'calc(2000 * var(--vh))' }}
+      >
         <canvas id="canvas" ref={canvasRef} class="fixed inset-0" />
         <div id="dimmer-0" class="fixed inset-0 bg-black" />
         <div id="dimmer-1" class="fixed inset-0 bg-black" />
